@@ -3,7 +3,7 @@
     "contentVersion": "1.0.0.0",
     "parameters": {
       "keyVaultName": {
-        "value": "MyUniqueKeyVaultName"
+        "value": "vault1"
       },
       "objectId": {
         "value": "00000402-96ac-4626-ab60-7ee1a9361c68"
