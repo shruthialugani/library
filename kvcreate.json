@@ -154,7 +154,7 @@
  },
  "secretName": {
  "type": "string",
- "value": "[resourceId('Microsoft.KeyVault/vaults/', parameters('secretName'))]"
+ "value": "[ parameters('secretName')]"
  }
   }
 }
