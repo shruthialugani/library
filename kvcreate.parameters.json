@@ -3,13 +3,13 @@
     "contentVersion": "1.0.0.0",
     "parameters": {
       "keyVaultName": {
-        "value": "shalugan2"
+        "value": "shalugan3"
       },
       "objectId": {
         "value": "00000402-96ac-4626-ab60-7ee1a9361c68"
       },
       "secretName": {
-        "value": "MyAdminPassword"
+        "value": "Microsoft123"
       },
       "secretValue": {
         "value": "GEN-UNIQUE"
