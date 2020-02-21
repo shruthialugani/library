@@ -11,7 +11,7 @@
             "keyVault": {
                 "id": "/subscriptions/aecab192-d24f-495e-8415-bbc6cd9fc90f/resourceGroups/shalugan1/providers/Microsoft.KeyVault/vaults/shaluganvault"
                     },
-                    "secretName": "[parameters('keyVault-settings').secret]"
+                    "secretName": "MyAdminPassword"
                 }
          }
       }
