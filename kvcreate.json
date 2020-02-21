@@ -150,7 +150,11 @@
     "outputs": {
  "vaultId": {
  "type": "string",
- "value": "[resourceId('Microsoft.KeyVault/vaults/', parameters('keyVaultName'))]" 
+ "value": "[resourceId('Microsoft.KeyVault/vaults/', parameters('keyVaultName'))]"
+ },
+ "secretName": {
+ "type": "string",
+ "value": "[resourceId('Microsoft.KeyVault/vaults/', parameters('secretName'))]"
  }
   }
 }
