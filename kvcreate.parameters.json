@@ -12,7 +12,7 @@
         "value": "Microsoft123"
       },
       "secretValue": {
-        "value": "GEN-UNIQUE"
+        "value": "Microsoft@123"
       },
       "enabledForTemplateDeployment": {
         "value": true
