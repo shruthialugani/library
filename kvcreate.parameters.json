@@ -1,0 +1,21 @@
+{
+    "$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+    "contentVersion": "1.0.0.0",
+    "parameters": {
+      "keyVaultName": {
+        "value": "MyUniqueKeyVaultName"
+      },
+      "objectId": {
+        "value": "00000402-96ac-4626-ab60-7ee1a9361c68"
+      },
+      "secretName": {
+        "value": "MyAdminPassword"
+      },
+      "secretValue": {
+        "value": "GEN-UNIQUE"
+      },
+      "enabledForTemplateDeployment": {
+        "value": true
+    }
+    }
+  }

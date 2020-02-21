@@ -1,0 +1,45 @@
+{
+  "$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentTemplate.json#",
+  "contentVersion": "1.0.0.0",
+  "parameters": {},
+  "variables":{
+  },
+  
+  "resources":[
+      {
+          "name": "linkedTemplate",
+            "type": "Microsoft.Resources/deployments",
+            "apiVersion": "2018-05-01",
+            "properties": {
+                "mode": "Incremental",
+                "templateLink": {
+                    "uri": "https://4tjaz7itfop5ysawinvm.blob.core.windows.net/democontainer/kvcreate.json?sp=r&st=2020-02-21T05:56:00Z&se=2020-02-21T13:56:00Z&spr=https&sv=2019-02-02&sr=b&sig=JaKzRgP7HeixGTM2xtuuixD1i6123lXK46w1ClxglCY%3D"
+                                },
+                "parametersLink": {
+                    "uri": "https://4tjaz7itfop5ysawinvm.blob.core.windows.net/democontainer/kvcreate.parameters.json?sp=r&st=2020-02-21T05:57:05Z&se=2020-02-21T13:57:05Z&spr=https&sv=2019-02-02&sr=b&sig=3Sha3v1ke6ZifHUPSgbZbioFpOwcrdka8EOLJDx2Ttg%3D"              
+                            }
+                         }
+        },
+  
+             {
+    "name": "linkedTemplate1",
+    "type": "Microsoft.Resources/deployments",
+    "apiVersion": "2018-05-01",
+    "properties": {
+        "mode": "Incremental",
+        "templateLink": {
+            "uri": "https://4tjaz7itfop5ysawinvm.blob.core.windows.net/democontainer/vmdeploy.json?sp=r&st=2020-02-21T05:57:29Z&se=2020-02-21T13:57:29Z&spr=https&sv=2019-02-02&sr=b&sig=7B7X3p4mR5mvVLZv%2BTPdDzadS1PSCJqcSl0zQ2Pd4qM%3D"
+            
+    
+                        },
+        "parametersLink": {
+            "uri": "https://4tjaz7itfop5ysawinvm.blob.core.windows.net/democontainer/vmdeploy.parameters.json?sp=r&st=2020-02-21T05:58:03Z&se=2020-02-21T13:58:03Z&spr=https&sv=2019-02-02&sr=b&sig=LhDSSBbTN5qVp8AvcYc1MksQCw9tMNFLVB0WAdVjgPo%3D"
+    
+                        }
+                }
+             }
+  ],
+
+   "outputs":{} 
+  }
+  
